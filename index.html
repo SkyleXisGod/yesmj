@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Zagłoba 2P</title>
+<style>
+    #blue
+         {
+             font-size: 72px;
+             background: -webkit-linear-gradient(blue,cyan);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+    #orange
+         {
+             font-size: 72px;
+             background: -webkit-linear-gradient(red,yellow);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+    #blue2
+         {
+             font-size: 24px;
+             background: -webkit-linear-gradient(blue,cyan);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+    #orange2
+         {
+             font-size: 24px;
+             background: -webkit-linear-gradient(red,yellow);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+    #blue3
+         {
+             font-size: 30px;
+             background: -webkit-linear-gradient(blue,cyan);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+    #orange3
+         {
+             font-size: 30px;
+             background: -webkit-linear-gradient(red,yellow);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+         }
+     #div1
+         {
+             border: 2px solid transparent;
+             width: 60%;
+             border-color: #0909aa;
+             border-radius:10px;
+             background-color: #05057e;
+             padding: 40px;
+             text-align: center;  
+             position: relative;
+
+             --angle: 0deg;
+
+
+             border-image: linear-gradient(var(--angle), red, yellow, lime, aqua, blue, magenta) 1;
+             animation: 10s rotate linear infinite;
+         }
+     #input1
+         {
+             background-color: #000057;
+
+             font-style: italic;
+             font-size: 0.5cm;
+             padding: 5px;
+             color: white;
+
+             border-radius:10px;
+             background: linear-gradient(#000057, #000057) padding-box, linear-gradient(to right, blue, cyan) border-box;
+             border-radius: 50em;
+             border: 3px solid transparent;
+             box-shadow:0 0 15px blue;
+        }
+     #input2
+         {
+             background-color: #000057;
+
+             font-style: italic;
+             font-size: 0.5cm;
+             padding: 5px;
+             color: white;
+
+             border-radius:10px;
+             background: linear-gradient(#000057, #000057) padding-box, linear-gradient(to right, rgb(255, 115, 0), yellow) border-box;
+             border-radius: 50em;
+             border: 3px solid transparent;
+             box-shadow:0 0 15px orange;
+        }
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+@media screen and (width<600px) {
+        /* For mobile phones: */
+        #div1 {
+            background-color: RED;
+            width: 80%;
+            }
+}
+    </style> 
+    <script language="JavaScript">
+        function WinOpenZaglobaZ2()
+                {
+                window.open("z2_zagl.html","okienko_z2","toolbar=no,directories=no,menubar=no");
+                }
+        function WinOpenZaglobaZ3()
+                {
+                window.open("z3_zagl.html","okienko_z3","toolbar=no,directories=no,menubar=no");
+                }
+        function WinOpenZaglobaZ4()
+                {
+                window.open("z4_zagl.html","okienko_z4","toolbar=no,directories=no,menubar=no");
+                }
+        function WinOpenZaglobaZ5()
+                {
+                window.open("z5_zagl.html","okienko_z5","toolbar=no,directories=no,menubar=no");
+                }
+ 
+    </script>
+    </head>
+    <body style="background-color: #000057;">
+    <form>
+    <center>
+
+        <p><i><b id="blue"> ZAG<b id="orange">ŁOBA </p></b></b></i>
+        <p><i><b id="orange2"> szkielet <b id="blue2">zaliczeniowy </p><br></b></b></i>
+
+        <div id="div1">
+        <b id="blue3"> ZADANIA </b><br><br>
+        <input id="input1" type="button" name="ZADANIE 2" value="   ZADANIE 2   " onclick="WinOpenZaglobaZ2(' ')">
+        <input id="input1" type="button" name="ZADANIE 3" value="   ZADANIE 3   " onclick="WinOpenZaglobaZ3(' ')">
+        <input id="input1" type="button" name="ZADANIE 4" value="   ZADANIE 4   " onclick="WinOpenZaglobaZ4(' ')">
+        <input id="input1" type="button" name="ZADANIE 5" value="   ZADANIE 5   " onclick="WinOpenZaglobaZ5(' ')">
+        </div>
+
+
+        <br><br>
+
+
+        <div id="div1">
+        <b id="orange3"> KODY </b><br><br>
+        <input id="input2" type="button" name="ZADANIE 2 KOD" value="   ZADANIE 2   " onclick="WinOpenZaglobaZ2_kod(' ')">
+        <input id="input2" type="button" name="ZADANIE 3 KOD" value="   ZADANIE 3   " onclick="WinOpenZaglobaZ2_kod(' ')">
+        <input id="input2" type="button" name="ZADANIE 4 KOD" value="   ZADANIE 4   " onclick="WinOpenZaglobaZ2_kod(' ')">
+        <input id="input2" type="button" name="ZADANIE 5 KOD" value="   ZADANIE 5   " onclick="WinOpenZaglobaZ2_kod(' ')">
+        </div>
+        <br>
+        <b style="color: white"> Strona zaliczeniowa RWD | Kacper Zagłoba 2P </b>
+    </center>
+    </form>
+    </body>
+</html>
